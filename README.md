@@ -15,44 +15,78 @@ Events
 ======
 * To unregister event just set listener to null (e.g plugin().onMouseLButtonDow = null)
 
+
+1. onMouseLButtonDown
+
+```
 plugin().onMouseLButtonDown = function (x,y, windowText) {
 	console.log("onMouseLButtonDown: ", x,y, windowText);
 };
+```
 
+2. onMouseLButtonUP
+
+```
 plugin().onMouseLButtonUP = function (x,y, windowText) {
 	console.log("onMouseLButtonUP: ", x,y, windowText);
 };
+```
 
-*use only when necessary (performance hit)
+3. onMouseMove: use only when necessary (performance hit)
 
+```
 plugin().onMouseMove = function (x,y) {
         console.log("onMouseMove: ", x,y);
 };	
+```
 
+3. onMouseRButtonDown
+
+```
 plugin().onMouseRButtonDown = function (x,y) {
 	console.log("onMouseRButtonDown: ", x,y);
 };
+```
 
+4. onMouseRButtonUP
+
+```
 plugin().onMouseRButtonUP = function (x,y) {
 	console.log("onMouseRButtonUP: ", x,y);
 };
+```
 
+5 onMouseWheel
+
+```
 plugin().onMouseWheel = function (e) {
 	console.log("onMouseMouseWheel", e);
 };
-	
+```
+
+6. onMouseHWheel
+
+```
 plugin().onMouseHWheel = function (e) {
 	console.log("onMouseHMouseWheel", e);
 };
-	
+```
+
+7. onKeyDown
+
+```
 plugin().onKeyDown = function (e) {
 	console.log("onKeyDown", e);
 };
-	
+```
+
+8. 	onKeyup
+
+```
 plugin().onKeyup = function (e) {
 	console.log("onKeyup", e);
 };
-
+```
 
 Sample Overwolf WebApp
 ======================
