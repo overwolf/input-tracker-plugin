@@ -29,7 +29,6 @@ plugin().onMouseMove = function (x,y) {
         console.log("onMouseMove: ", x,y);
 };	
 
-
 plugin().onMouseRButtonDown = function (x,y) {
 	console.log("onMouseRButtonDown: ", x,y);
 };
@@ -38,22 +37,18 @@ plugin().onMouseRButtonUP = function (x,y) {
 	console.log("onMouseRButtonUP: ", x,y);
 };
 
-
 plugin().onMouseWheel = function (e) {
 	console.log("onMouseMouseWheel", e);
 };
 	
-
 plugin().onMouseHWheel = function (e) {
 	console.log("onMouseHMouseWheel", e);
 };
 	
-
 plugin().onKeyDown = function (e) {
 	console.log("onKeyDown", e);
 };
 	
-
 plugin().onKeyup = function (e) {
 	console.log("onKeyup", e);
 };
