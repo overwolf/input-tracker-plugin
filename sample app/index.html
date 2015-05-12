@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Simple IO App Tester</title>
+  </head>
+  <body>
+
+    <embed  id="plugin" 
+            type="application/x-inputtracker-plugin" 
+            width=0px 
+            height=0px>
+    </embed>
+    
+    <h1 id="title"></h1>
+    <hr>
+    <div id="messages"></div>
+
+    <script>
+      //navigator.plugins.refresh(false);
+
+      function addMessage(message) {
+        var obj = document.createElement("div");
+        obj.innerText = message;
+        document.querySelector('#messages').appendChild(obj);
+      }
+      
+      function plugin() {
+        return document.querySelector('#plugin');
+      }
+      
+      if (plugin() == null) {
+        document.querySelector('#title').innerText = "Plugin couldn't be loaded??";
+      } else {
+        document.querySelector('#title').innerText = "Plugin was loaded!";
+      }
+      
+
+    plugin().onMouseLButtonDown = function (x,y,text) {
+        console.log("onMouseLButtonDown: ", x,y, text);
+    };
+	plugin().onMouseLButtonUP = function (x,y) {
+        console.log("onMouseLButtonUP: ", x,y);
+    };
+	//unregister event event
+	//plugin().onMouseLButtonDown = null;
+	  
+	
+	/*
+	
+	// not recommended
+	plugin().onMouseMove = function (x,y) {
+        console.log("onMouseMove: ", x,y);
+    };	
+	plugin().onMouseRButtonDown = function (x,y) {
+        console.log("onMouseRButtonDown: ", x,y);
+    };
+    plugin().onMouseRButtonUP = function (x,y) {
+        console.log("onMouseRButtonUP: ", x,y);
+    };
+	
+	plugin().onMouseWheel = function (e) {
+        console.log("onMouseMouseWheel", e);
+    };
+	
+	plugin().onMouseHWheel = function (e) {
+        console.log("onMouseHMouseWheel", e);
+    };
+	
+	plugin().onKeyDown = function (e) {
+        console.log("onKeyDown", e);
+    };
+	
+	plugin().onKeyup = function (e) {
+        console.log("onKeyup", e);
+    };
+	*/
+	
+    </script>
+
+  </body>
+</html>

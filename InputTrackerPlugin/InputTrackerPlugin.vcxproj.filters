@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{b24efe72-84c4-41db-8177-e9e8dd8b7eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugin_common">
+      <UniqueIdentifier>{800392e4-3b33-4a98-827a-aaab561819ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nsPluginInstanceInputTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nsScriptableObjectBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nsScriptableObjectInputTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CriticalSectionLock.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Encoders.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Event.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\SingletonClass.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Thread.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\WorkerThread.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin_common\pluginbase.h">
+      <Filter>plugin_common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nsPluginInstanceInputTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nsScriptableObjectBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nsScriptableObjectInputTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CriticalSectionLock.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Encoders.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Event.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Thread.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\WorkerThread.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_common\np_entry.cpp">
+      <Filter>plugin_common</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_common\npn_gate.cpp">
+      <Filter>plugin_common</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin_common\npp_gate.cpp">
+      <Filter>plugin_common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InputTrackerPlugin.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InputTrackerPlugin.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
